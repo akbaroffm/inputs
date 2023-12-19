@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: cursive;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.wrapper{
+    margin: auto;
+    width: 700px;
+    height: 330px;
+    background-color: white;
+    border-radius: 10px;
+}
+.title{
+    padding-top: 30px;
+    text-align: center;
+}
+.check-label{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.check-img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border:2px solid black ;
+    border-radius: 50%;
+}
+.check-valeyball{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border:2px solid black ;
+    border-radius: 50%;
+}
+.check-tennis{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border:2px solid black ;
+    border-radius: 50%;
+}
+.check-xokkey{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border:2px solid black ;
+    border-radius: 50%;
+}
+.check-input:checked ~ .check-img{
+    background-image: url(../images/footbal.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+.check-input:checked ~ .check-valeyball{
+    background-image: url(../images/volleybol.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+.check-input:checked ~ .check-tennis{
+    background-image: url(../images/tennis.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+.check-input:checked ~ .check-xokkey{
+    background-image: url(../images/hokkey.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
